@@ -15,11 +15,10 @@ end
 def apply_discount
   @total = @total - @discount * 10
   if @discount == 0
-    return "There is no discount to apply."
+     "There is no discount to apply."
   else
-   return "After the discount, the total comes to $#{@total}."
-end
-
+    "After the discount, the total comes to $#{@total}."
+  end
 end
 
 def items
