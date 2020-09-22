@@ -13,11 +13,11 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
-if @discount = 20
-  then  @total = @total - @discount * 10
+  @total = @total - @discount * 10
+  if @discount = 0
+    return "There is no discount to apply."
+  else
    return "After the discount, the total comes to $#{@total}."
-elsif @discount = 0
-  return "There is no discount to apply."
 end
 
 end
