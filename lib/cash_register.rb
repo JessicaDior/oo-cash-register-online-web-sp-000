@@ -16,8 +16,8 @@ def apply_discount
   if @discount != 0
     @total = @total - @discount * 10
     "After the discount, the total comes to $#{@total}."
-
-  else "There is no discount to apply."
+  elsif @discount = 0
+     "There is no discount to apply."
   end
 end
 
