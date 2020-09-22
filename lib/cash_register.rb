@@ -21,8 +21,10 @@ def apply_discount
    end
 end
 
-def items
+def items(new_items)
   @items = []
+  @items << new_items
+  @items
 end
 
 def void_last_transaction
