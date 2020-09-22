@@ -23,8 +23,7 @@ end
 
 def items
   @items = []
-  @items << new_items
-  @items
+
 end
 
 def void_last_transaction
