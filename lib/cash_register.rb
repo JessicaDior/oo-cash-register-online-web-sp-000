@@ -5,7 +5,6 @@ class CashRegister
 def initialize(discount = 0)
   @total = 0
   @discount = discount
-  @items = []
 end
 
 
@@ -21,6 +20,11 @@ def apply_discount
    else
      "There is no discount to apply."
    end
+end
+
+def items
+  @items = []
+  @items
 end
 
 def void_last_transaction
