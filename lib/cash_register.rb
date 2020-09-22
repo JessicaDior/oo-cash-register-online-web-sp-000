@@ -21,7 +21,7 @@ def apply_discount
    end
 end
 
-def items(new_items)
+def items
   @items = []
   @items << new_items
   @items
