@@ -23,7 +23,7 @@ end
 
 def items
   @items = []
-  @items << add_item
+  @items << add_item(title)
   @items
 
 end
